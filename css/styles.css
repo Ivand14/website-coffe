@@ -30,10 +30,15 @@ html {
   text-decoration: none;
   color: #000;
   font-size: 2rem;
+  transition: all 0.6s;
 }
 .navbar li {
   list-style-type: none;
   margin-right: 2rem;
+}
+
+.navbar a:hover {
+  color: rgba(9, 15, 17, 0.9058823529);
 }
 
 .navbar-item {
@@ -55,7 +60,7 @@ html {
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #01161e;
+  background-color: #090f11;
   /*ANIMACION DE DERECHA A IZQUIERDA*/
   transform-origin: right;
   transform: scale(0);
@@ -198,13 +203,21 @@ html {
   list-style: decimal;
 }
 
-.slide-coffe {
-  display: flex;
-  justify-content: center;
-  margin: 0 10rem;
-  gap: 4rem;
+/*.slide-coffe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+    p{
+        font-size: 2rem;
+        color: aliceblue;
+    }
 }
-
+.slide{
+    height: 2rem;
+    width: 50rem;
+}*/
 .tipos-cafe, .texto-tipos {
   display: flex;
   justify-content: center;
@@ -275,5 +288,198 @@ html {
 .caja-cafe p {
   font-size: 1.4rem;
 }
+
+/*FRANCHISE*/
+.contenedor-franchise {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 3rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.texto-franchise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 3rem 5rem;
+  gap: 2rem;
+}
+.texto-franchise h2 {
+  font-size: 3.5rem;
+}
+.texto-franchise h3 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+.texto-franchise p {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.contenido-oportunidad {
+  display: flex;
+  gap: 5rem;
+}
+
+.titulo-oportunidad {
+  margin-top: 5rem;
+}
+.titulo-oportunidad h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.contenido-oportunidad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.texto-oportunidad {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 2rem;
+  width: 80rem;
+}
+.texto-oportunidad p {
+  font-size: 2rem;
+}
+
+.llamada, .email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.llamada img, .email img {
+  height: 2rem;
+}
+
+.carrusel {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 55rem;
+  margin: 3rem -3rem;
+  overflow: hidden;
+  object-fit: contain;
+  border-radius: 3rem;
+}
+.carrusel ul {
+  list-style-type: none;
+}
+
+.carrusel-fotos {
+  display: flex;
+  width: 20rem;
+  animation: slide-carrusel infinite 20s;
+}
+
+@keyframes slide-carrusel {
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: -110%;
+  }
+  45% {
+    margin-left: -110%;
+  }
+  50% {
+    margin-left: -217%;
+  }
+  70% {
+    margin-left: -217%;
+  }
+  75% {
+    margin-left: -333%;
+  }
+  95% {
+    margin-left: -333%;
+  }
+  98% {
+    margin-left: -437%;
+  }
+  100% {
+    margin-left: -437%;
+  }
+}
+.carrusel2 ul {
+  list-style-type: none;
+}
+
+.carrusel-menu {
+  display: block;
+  margin: 1rem 2rem;
+}
+.carrusel-menu img {
+  width: 7rem;
+  height: 6rem;
+}
+
+/*CONTACT US*/
+.contenedor-contacto {
+  margin: 5rem 0;
+}
+
+.titulo-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.titulo-contacto h2 {
+  font-size: 3.5rem;
+}
+.titulo-contacto h4 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.line {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #e5e5e5;
+  margin-bottom: 60px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ubicacion, .cel {
+  display: flex;
+  justify-content: center;
+}
+
+.codigo-postal {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.codigo-postal img {
+  height: 2rem;
+}
+
+.codigo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ubicacion, .cel {
+  display: flex;
+  align-items: center;
+}
+
+/*VARIABLES*/
 
 /*# sourceMappingURL=styles.css.map */

@@ -21,6 +21,7 @@
         text-decoration: none;
         color: #000;
         font-size: 2rem;
+        transition: all .6s;
     }
     li{
         list-style-type: none;
@@ -28,7 +29,9 @@
     }
     
 }
-
+.navbar a:hover{
+    color: #090f11e7;
+}
 .navbar-item{
     display: flex;
     background-color: wheat;
@@ -49,7 +52,7 @@
     left: 0;
     height: 2px;
     width: 100%;
-    background-color:#01161e;
+    background-color:#090f11;
     /*ANIMACION DE DERECHA A IZQUIERDA*/
     transform-origin: right;
     transform: scale(0);
@@ -192,12 +195,21 @@
         list-style: decimal;
     }
 }
-.slide-coffe{
+/*.slide-coffe{
     display: flex;
     justify-content: center;
-    margin: 0 10rem;
-    gap: 4rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+    p{
+        font-size: 2rem;
+        color: aliceblue;
+    }
 }
+.slide{
+    height: 2rem;
+    width: 50rem;
+}*/
 .tipos-cafe{
     display: flex;
     justify-content: center;
@@ -259,4 +271,180 @@
     p{
         font-size: 1.4rem;
     }
+}
+
+/*FRANCHISE*/
+.contenedor-franchise{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 3rem;
+    overflow: hidden;
+    background-color: white;
+}
+.texto-franchise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 3rem 5rem;
+    gap: 2rem;
+    h2{
+        font-size: 3.5rem;
+    }
+    h3{
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    p{
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+}
+.contenido-oportunidad{
+    display: flex;
+    gap: 5rem;
+}
+.titulo-oportunidad{
+    margin-top: 5rem;
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+}
+
+.contenido-oportunidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.texto-oportunidad{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem 2rem;
+    width: 80rem;
+    p{
+        font-size: 2rem;
+    }
+}
+
+.llamada{
+    display: flex;
+    align-items: center;
+    img{
+        height: 2rem;
+    }
+    gap: 1rem;
+}
+
+.email{
+    @extend .llamada;
+}
+
+.carrusel{
+    ul{
+        list-style-type: none;
+    }
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 55rem;
+    margin: 3rem -3rem;
+    overflow: hidden;
+    object-fit: contain;
+    border-radius: 3rem;
+}
+
+.carrusel-fotos{
+    display: flex;
+    width: 20rem;
+    animation: slide-carrusel infinite 20s  ;
+}
+@keyframes slide-carrusel {
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -110%;}
+    45%{margin-left: -110%;}
+
+    50%{margin-left: -217%;}
+    70%{margin-left: -217%;}
+
+    75%{margin-left: -333%;}
+    95%{margin-left: -333%;}
+
+    98%{margin-left: -437%;}
+    100%{margin-left: -437%;}
+}
+.carrusel2{
+    ul{
+        list-style-type: none;
+    }
+    
+}
+.carrusel-menu{
+    display: block;
+    margin: 1rem 2rem;
+    img{
+        width: 7rem;
+        height: 6rem;
+    }
+}
+
+/*CONTACT US*/
+.contenedor-contacto{
+    margin: 5rem 0;
+}
+.titulo-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        font-size: 3.5rem;
+    }
+    h4{
+        font-size: 3rem;
+        font-weight: 100;
+    }
+}
+.line{
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #e5e5e5;
+    margin-bottom: 60px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ubicacion{
+    display: flex;
+    justify-content: center;
+
+}
+.codigo-postal{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    img{
+        height: 2rem;
+    }
+}
+.codigo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.ubicacion{
+    display: flex;
+    align-items: center;
+}
+
+.cel{
+    @extend .ubicacion;
 }
