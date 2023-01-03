@@ -297,6 +297,7 @@ html {
 }
 .caja-cafe p {
   font-size: 1.4rem;
+  text-align: center;
 }
 
 /*FRANCHISE*/
@@ -800,14 +801,16 @@ html {
   .texto-tipos p {
     font-size: 1rem;
   }
-  .caja-cafe {
-    font-size: 1.4rem;
-  }
   .caja-cafe img {
     height: 15rem;
   }
   .caja-cafe h4 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+  }
+  .caja-cafe p {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.4rem;
   }
   @keyframes slide {
     0% {
@@ -849,29 +852,20 @@ html {
     70% {
       margin-left: -720%;
     }
-    73% {
-      margin-left: -750%;
-    }
     75% {
       margin-left: -850%;
     }
     80% {
       margin-left: -900%;
     }
-    83% {
-      margin-left: -950%;
-    }
     85% {
-      margin-left: -1000%;
-    }
-    90% {
       margin-left: -1100%;
     }
-    95% {
+    90% {
       margin-left: -1200%;
     }
     100% {
-      margin-left: -1300%;
+      margin-left: -1450%;
     }
   }
   .texto-franchise h2 {

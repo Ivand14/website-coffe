@@ -261,9 +261,13 @@
             height: 15rem;
         }
         h4{
-            font-size: 1.4rem;
+            font-size: 1.1rem;
         }
-        font-size: 1.4rem;
+        p{
+            font-size: 1.1rem;
+            text-align:center;
+            line-height: 1.4rem;
+        }
     }
     @keyframes slide{
         0%{margin-left: 0%;}
@@ -285,16 +289,13 @@
         65%{margin-left: -610%;}
 
         70%{margin-left: -720%;}
-        73%{margin-left: -750%;}
         75%{margin-left: -850%;}
 
         80%{margin-left: -900%;}
-        83%{margin-left: -950%;}
-        85%{margin-left: -1000%;}
+        85%{margin-left: -1100%;}
 
-        90%{margin-left: -1100%;}
-        95%{margin-left: -1200%;}
-        100%{margin-left: -1300%;}
+        90%{margin-left: -1200%;}
+        100%{margin-left: -1450%;}
 
     
     
