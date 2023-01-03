@@ -14,7 +14,7 @@ html {
 }
 
 .contenedor-principal {
-  background-image: url("../imagenes/Curve Line.svg");
+  background: linear-gradient(to left, #090f11, #000);
   max-width: 100%;
   height: auto;
   filter: brightness(0.7);
@@ -75,6 +75,7 @@ html {
 
 .contenido-header {
   display: flex;
+  overflow: hidden;
 }
 
 .imagen-header {
@@ -165,6 +166,7 @@ html {
 
 /*COFFE*/
 .coffe-contenedor {
+  overflow: hidden;
   overflow: hidden;
 }
 
@@ -324,6 +326,7 @@ html {
 .contenido-oportunidad {
   display: flex;
   gap: 5rem;
+  overflow: hidden;
 }
 
 .titulo-oportunidad {
@@ -429,6 +432,7 @@ html {
 /*CONTACT US*/
 .contenedor-contacto {
   margin: 5rem 0;
+  overflow: hidden;
 }
 
 .titulo-contacto {
@@ -455,31 +459,257 @@ html {
   margin-right: auto;
 }
 
-.ubicacion, .cel {
+.datos-ubicacion {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
-.codigo-postal {
+.codigo-postal, .codigo {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
-.codigo-postal img {
-  height: 2rem;
-}
 
 .codigo {
-  display: flex;
-  flex-direction: column;
   gap: 1.5rem;
+}
+.codigo p {
+  font-size: 2rem;
+}
+
+.titulo-codigo h2 {
+  font-size: 2rem;
 }
 
 .ubicacion, .cel {
   display: flex;
   align-items: center;
+  gap: 1rem;
+}
+.ubicacion img, .cel img {
+  height: 2rem;
+}
+
+.mail-codigo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.mail-codigo img {
+  height: 2rem;
+}
+.mail-codigo a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+  transition: all 0.4s;
+}
+.mail-codigo a:hover {
+  text-decoration: underline;
+}
+
+.mapa iframe {
+  border-radius: 2rem;
+}
+
+/*FOOTER*/
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 5rem 0;
+  height: auto;
+  overflow: hidden;
+}
+
+.icono-fb img {
+  height: 4rem;
+}
+
+.derechos {
+  display: flex;
+  align-items: center;
+}
+.derechos img {
+  height: 1.5rem;
+}
+.derechos p {
+  font-size: 2rem;
 }
 
 /*VARIABLES*/
+@media screen and (max-width: 1024px) {
+  .texto-header h1 {
+    font-size: 2.5rem;
+    width: auto;
+  }
+  .imagen-header img {
+    height: 37rem;
+  }
+  .texto-tipos p {
+    font-size: 2.1rem;
+  }
+  .contenido-oportunidad {
+    display: flex;
+    flex-direction: column;
+  }
+  .carrusel-fotos img {
+    object-fit: cover;
+    width: 60rem;
+  }
+  .carrusel-menu {
+    display: flex;
+    gap: 1.5rem;
+  }
+  @keyframes slide-carrusel {
+    0% {
+      margin-left: 0%;
+    }
+    20% {
+      margin-left: 0%;
+    }
+    25% {
+      margin-left: -110%;
+    }
+    45% {
+      margin-left: -110%;
+    }
+    50% {
+      margin-left: -217%;
+    }
+    70% {
+      margin-left: -217%;
+    }
+    75% {
+      margin-left: -333%;
+    }
+    95% {
+      margin-left: -333%;
+    }
+    98% {
+      margin-left: -437%;
+    }
+    100% {
+      margin-left: -437%;
+    }
+  }
+  .datos-ubicacion {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .codigo-postal, .codigo {
+    display: flex;
+    flex-direction: column;
+  }
+  .codigo-postal h2, .codigo h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contenido-header {
+    display: flex;
+    align-items: center;
+  }
+  .texto-header h1 {
+    font-size: 2rem;
+    width: auto;
+  }
+  .imagen-header {
+    margin: 4rem 1rem;
+  }
+  .imagen-header img {
+    height: 27rem;
+  }
+  .texto-tipos h2 {
+    font-size: 3rem;
+  }
+  .texto-tipos p {
+    font-size: 1.7rem;
+  }
+  .texto-franchise h2 {
+    font-size: 3rem;
+  }
+  .texto-franchise h3 {
+    font-size: 2rem;
+  }
+  .texto-franchise img {
+    height: 3rem;
+  }
+  .contenido-oportunidad {
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo-oportunidad h2 {
+    font-size: 3rem;
+  }
+  .texto-oportunidad p {
+    margin: 0 5rem;
+    font-size: 2rem;
+  }
+  .llamada, .email {
+    margin: 0 5rem;
+  }
+  .carrusel-fotos img {
+    object-fit: cover;
+    width: 60rem;
+  }
+  .carrusel-menu {
+    display: flex;
+    gap: 1.5rem;
+  }
+  @keyframes slide-carrusel {
+    0% {
+      margin-left: 0%;
+    }
+    20% {
+      margin-left: 0%;
+    }
+    25% {
+      margin-left: -110%;
+    }
+    45% {
+      margin-left: -110%;
+    }
+    50% {
+      margin-left: -217%;
+    }
+    70% {
+      margin-left: -217%;
+    }
+    75% {
+      margin-left: -333%;
+    }
+    95% {
+      margin-left: -333%;
+    }
+    98% {
+      margin-left: -437%;
+    }
+    100% {
+      margin-left: -437%;
+    }
+  }
+  .datos-ubicacion {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .codigo-postal, .codigo {
+    display: flex;
+    flex-direction: column;
+  }
+  .codigo-postal h2, .codigo h2 {
+    text-align: center;
+  }
+  .titulo-contacto h2 {
+    font-size: 3rem;
+  }
+  .titulo-contacto h4 {
+    font-size: 2rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

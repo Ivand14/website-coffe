@@ -1,0 +1,160 @@
+@media screen and (max-width:1024px) {
+    .texto-header{
+        h1{
+            font-size: 2.5rem;
+            width: auto;
+        }
+    }
+    .imagen-header{
+        img{
+            height: 37rem;
+        }
+    }
+    .texto-tipos{
+        p{
+            font-size: 2.1rem;
+        }
+    }
+    .contenido-oportunidad{
+        display: flex;
+        flex-direction: column;
+    }
+    .carrusel-fotos{
+        img{
+            object-fit: cover;
+            width: 60rem;
+        }
+    }
+    .carrusel-menu{
+        display: flex;
+        gap: 1.5rem;
+    }
+    @keyframes slide-carrusel {
+        0%{margin-left: 0%;}
+        20%{margin-left: 0%;}
+    
+        25%{margin-left: -110%;}
+        45%{margin-left: -110%;}
+    
+        50%{margin-left: -217%;}
+        70%{margin-left: -217%;}
+    
+        75%{margin-left: -333%;}
+        95%{margin-left: -333%;}
+    
+        98%{margin-left: -437%;}
+        100%{margin-left: -437%;}
+    }
+    .datos-ubicacion{
+        display: flex;
+        flex-direction:  column-reverse;
+    }
+    .codigo-postal{
+        display: flex;
+        flex-direction: column;
+        h2{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contenido-header{
+        display: flex;
+        align-items: center;
+    }
+    .texto-header{
+        h1{
+            font-size: 2rem;
+            width: auto;
+        }
+    }
+    .imagen-header{
+        margin: 4rem 1rem;
+        img{
+            height: 27rem;
+        }
+    }
+    .texto-tipos{
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.7rem;
+        }
+    }
+    .texto-franchise{
+        h2{
+            font-size: 3rem;
+        }
+        h3{
+            font-size: 2rem;
+        }
+        img{
+            height: 3rem;
+        }
+    }
+    .contenido-oportunidad{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo-oportunidad{
+        h2{
+            font-size: 3rem;
+        }
+    }
+    .texto-oportunidad{
+        p{
+            margin: 0 5rem;
+            font-size: 2rem;
+        }
+    }
+    .llamada{
+        margin: 0 5rem;
+    }
+    .carrusel-fotos{
+        img{
+            object-fit: cover;
+            width: 60rem;
+        }
+    }
+    .carrusel-menu{
+        display: flex;
+        gap: 1.5rem;
+    }
+    @keyframes slide-carrusel {
+        0%{margin-left: 0%;}
+        20%{margin-left: 0%;}
+    
+        25%{margin-left: -110%;}
+        45%{margin-left: -110%;}
+    
+        50%{margin-left: -217%;}
+        70%{margin-left: -217%;}
+    
+        75%{margin-left: -333%;}
+        95%{margin-left: -333%;}
+    
+        98%{margin-left: -437%;}
+        100%{margin-left: -437%;}
+    }
+    .datos-ubicacion{
+        display: flex;
+        flex-direction:  column-reverse;
+    }
+    .codigo-postal{
+        display: flex;
+        flex-direction: column;
+        h2{
+            text-align: center;
+        }
+    }
+    .titulo-contacto{
+        h2{
+            font-size: 3rem;
+        }
+        h4{
+            font-size: 2rem;
+        }
+    }
+}

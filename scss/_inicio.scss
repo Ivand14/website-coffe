@@ -3,11 +3,10 @@
     overflow: hidden;
 }
 .contenedor-principal{
-    background-image: url('../imagenes/Curve\ Line.svg');
+    background:linear-gradient(to left,#090f11,#000);
     max-width: 100%;
     height: auto;
     filter: brightness(.7);
-    
 }
 
 
@@ -66,6 +65,7 @@
 }
 .contenido-header{
     display: flex;
+    overflow: hidden;
 }
 .imagen-header{
     display: flex;
@@ -156,6 +156,7 @@
 
 /*COFFE*/
 .coffe-contenedor{
+    overflow: hidden;
     overflow: hidden;
 }
 .razones{
@@ -306,6 +307,7 @@
 .contenido-oportunidad{
     display: flex;
     gap: 5rem;
+    overflow: hidden;
 }
 .titulo-oportunidad{
     margin-top: 5rem;
@@ -399,6 +401,7 @@
 /*CONTACT US*/
 .contenedor-contacto{
     margin: 5rem 0;
+    overflow: hidden;
 }
 .titulo-contacto{
     display: flex;
@@ -422,29 +425,92 @@
     margin-left: auto;
     margin-right: auto;
 }
-.ubicacion{
+
+.datos-ubicacion{
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    gap: 3rem;
 }
 .codigo-postal{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    img{
-        height: 2rem;
-    }
 }
 .codigo{
-    display: flex;
-    flex-direction: column;
+    @extend .codigo-postal;
     gap: 1.5rem;
+    p{
+        font-size: 2rem;
+    }
+}
+.titulo-codigo{
+    h2{
+        font-size: 2rem;
+    }
 }
 .ubicacion{
     display: flex;
     align-items: center;
+    gap: 1rem;
+    img{
+        height: 2rem;
+    }
 }
 
 .cel{
     @extend .ubicacion;
+}
+.mail-codigo{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    img{
+        height: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+        font-size: 2rem;
+        transition: all .4s;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+.mapa{
+    iframe{
+        border-radius: 2rem;
+    }
+}
+
+/*FOOTER*/
+
+.contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 5rem 0;
+    height: auto;
+    overflow: hidden;
+}
+
+.icono-fb{
+    img{
+        height: 4rem; 
+    }
+}
+
+.derechos{
+    display: flex;
+    align-items: center;
+    img{
+        height: 1.5rem;
+    }
+    p{
+        font-size: 2rem;
+    }
 }
