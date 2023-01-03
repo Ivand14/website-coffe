@@ -14,10 +14,15 @@ html {
 }
 
 .contenedor-principal {
-  background: linear-gradient(to left, #090f11, #000);
+  background-image: url("../imagenes/fondo-principal.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: none;
+  background-attachment: fixed;
+  background-position: 60%;
   max-width: 100%;
   height: auto;
-  filter: brightness(0.7);
+  filter: brightness(0.79);
 }
 
 .toggle-menu {
@@ -79,6 +84,7 @@ html {
 
 .contenido-header {
   display: flex;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -94,19 +100,21 @@ html {
 
 .texto-header {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 13rem 5rem;
+  height: 40rem;
   gap: 3rem;
 }
 .texto-header h1 {
-  color: aliceblue;
+  color: white;
   word-spacing: 0.5rem;
   font-size: 3rem;
 }
 .texto-header p {
-  color: aliceblue;
+  color: white;
   font-size: 2rem;
+  width: 60rem;
 }
 .texto-header a {
   text-decoration: none;
@@ -343,6 +351,7 @@ html {
 
 .contenido-oportunidad {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5rem;
@@ -353,7 +362,6 @@ html {
   flex-direction: column;
   gap: 2rem;
   margin: 3rem 2rem;
-  width: 80rem;
 }
 .texto-oportunidad p {
   font-size: 2rem;
@@ -387,6 +395,9 @@ html {
   width: 20rem;
   animation: slide-carrusel infinite 20s;
 }
+.carrusel-fotos img {
+  width: 60rem;
+}
 
 @keyframes slide-carrusel {
   0% {
@@ -396,10 +407,10 @@ html {
     margin-left: 0%;
   }
   25% {
-    margin-left: -110%;
+    margin-left: -90%;
   }
   45% {
-    margin-left: -110%;
+    margin-left: -90%;
   }
   50% {
     margin-left: -217%;
@@ -425,7 +436,8 @@ html {
 }
 
 .carrusel-menu {
-  display: block;
+  display: flex;
+  gap: 1.3rem;
   margin: 1rem 2rem;
 }
 .carrusel-menu img {
@@ -547,40 +559,16 @@ html {
 
 /*VARIABLES*/
 @media screen and (max-width: 1024px) {
-  .navbar {
-    margin: -3rem;
-  }
-  .main-nav {
-    z-index: 1;
-  }
-  .navbar-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    width: 100rem;
-  }
-  .main-menu {
-    display: flex;
-    flex-direction: column;
-  }
   .contenido-header {
     height: 70rem;
     margin: -14rem 0rem;
   }
-  .toggle-menu {
+  .texto-header {
     display: flex;
-    justify-content: end;
-    width: 100%;
-    margin: 0;
-    top: 5rem;
-    right: 3rem;
-    cursor: pointer;
-    position: absolute;
-  }
-  .toggle-menu img {
-    filter: invert(1);
-    height: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14rem;
   }
   .texto-header h1 {
     font-size: 2.5rem;
@@ -648,13 +636,9 @@ html {
     text-align: center;
   }
 }
-@media screen and (max-width: 768px) {
-  .contenido-header {
-    display: flex;
-    align-items: center;
-  }
+@media (min-width: 640px) and (max-width: 768px) {
   .texto-header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: auto;
   }
   .imagen-header {
@@ -663,11 +647,26 @@ html {
   .imagen-header img {
     height: 27rem;
   }
+  .titulo-nosotros p {
+    font-size: 1.5rem;
+  }
+  .titulo-nosotros img {
+    height: 3rem;
+  }
+  .texto-nosotros p {
+    font-size: 1.5rem;
+  }
+  .texto-razones h2 {
+    font-size: 2.5rem;
+  }
+  .texto-razones p {
+    font-size: 1.5rem;
+  }
   .texto-tipos h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .texto-tipos p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
   .texto-franchise h2 {
     font-size: 3rem;
@@ -750,40 +749,133 @@ html {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 320px) {
-  .contenido-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .texto-header {
-    margin: 13rem 2rem;
-  }
+@media (min-width: 400px) and (max-width: 640px) {
   .texto-header h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     width: auto;
-    text-align: center;
   }
   .texto-header p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    width: 35rem;
   }
   .texto-header a {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   .imagen-header {
-    display: none;
+    margin: 4rem 1rem;
+  }
+  .imagen-header img {
+    height: 27rem;
+  }
+  .titulo-nosotros h2 {
+    font-size: 1.5rem;
+  }
+  .titulo-nosotros p {
+    font-size: 1.1rem;
+  }
+  .titulo-nosotros img {
+    height: 1.5rem;
+  }
+  .texto-nosotros p {
+    font-size: 1.5rem;
+  }
+  .razones {
+    background-position: 50%;
+  }
+  .texto-razones h2 {
+    font-size: 2rem;
+  }
+  .texto-razones p {
+    font-size: 1.5rem;
   }
   .texto-tipos h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .texto-tipos p {
-    font-size: 1.7rem;
+    font-size: 1rem;
+  }
+  .caja-cafe {
+    font-size: 1.4rem;
+  }
+  .caja-cafe img {
+    height: 15rem;
+  }
+  .caja-cafe h4 {
+    font-size: 1.4rem;
+  }
+  @keyframes slide {
+    0% {
+      margin-left: 0%;
+    }
+    15% {
+      margin-left: 0%;
+    }
+    20% {
+      margin-left: -200%;
+    }
+    25% {
+      margin-left: -200%;
+    }
+    30% {
+      margin-left: -300%;
+    }
+    35% {
+      margin-left: -300%;
+    }
+    40% {
+      margin-left: -405%;
+    }
+    45% {
+      margin-left: -405%;
+    }
+    50% {
+      margin-left: -510%;
+    }
+    55% {
+      margin-left: -510%;
+    }
+    60% {
+      margin-left: -610%;
+    }
+    65% {
+      margin-left: -610%;
+    }
+    70% {
+      margin-left: -720%;
+    }
+    73% {
+      margin-left: -750%;
+    }
+    75% {
+      margin-left: -850%;
+    }
+    80% {
+      margin-left: -900%;
+    }
+    83% {
+      margin-left: -950%;
+    }
+    85% {
+      margin-left: -1000%;
+    }
+    90% {
+      margin-left: -1100%;
+    }
+    95% {
+      margin-left: -1200%;
+    }
+    100% {
+      margin-left: -1300%;
+    }
   }
   .texto-franchise h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   .texto-franchise h3 {
-    font-size: 2rem;
+    font-size: 1.1rem;
+  }
+  .texto-franchise p {
+    font-size: 1.5rem;
   }
   .texto-franchise img {
     height: 3rem;
@@ -793,22 +885,29 @@ html {
     flex-direction: column;
   }
   .titulo-oportunidad h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   .texto-oportunidad p {
     margin: 0 5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .llamada, .email {
     margin: 0 5rem;
   }
+  .carrusel {
+    width: 38rem;
+  }
   .carrusel-fotos img {
     object-fit: cover;
-    width: 60rem;
+    width: 40rem;
   }
   .carrusel-menu {
     display: flex;
     gap: 1.5rem;
+  }
+  .carrusel-menu img {
+    width: 5rem;
+    height: 4rem;
   }
   @keyframes slide-carrusel {
     0% {
@@ -818,28 +917,28 @@ html {
       margin-left: 0%;
     }
     25% {
-      margin-left: -110%;
+      margin-left: -109%;
     }
     45% {
-      margin-left: -110%;
+      margin-left: -109%;
     }
     50% {
-      margin-left: -217%;
+      margin-left: -215%;
     }
     70% {
-      margin-left: -217%;
+      margin-left: -215%;
     }
     75% {
-      margin-left: -333%;
+      margin-left: -322%;
     }
     95% {
-      margin-left: -333%;
+      margin-left: -322%;
     }
     98% {
-      margin-left: -437%;
+      margin-left: -431%;
     }
     100% {
-      margin-left: -437%;
+      margin-left: -431%;
     }
   }
   .datos-ubicacion {
@@ -854,10 +953,26 @@ html {
     text-align: center;
   }
   .titulo-contacto h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .titulo-contacto h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  .codigo p {
+    font-size: 1.1rem;
+  }
+  .mail-codigo a {
+    font-size: 1.1rem;
+  }
+  .mapa iframe {
+    height: 30rem;
+    width: auto;
+  }
+  .icono-fb img {
+    height: 2rem;
+  }
+  .derechos p {
+    font-size: 1.5rem;
   }
 }
 

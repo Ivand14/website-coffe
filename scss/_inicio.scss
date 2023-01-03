@@ -3,10 +3,15 @@
     overflow: hidden;
 }
 .contenedor-principal{
-    background:linear-gradient(to left,#090f11,#000);
+    background-image: url('../imagenes/fondo-principal.jpg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: 60%;
     max-width: 100%;
     height: auto;
-    filter: brightness(.7);
+    filter: brightness(.79)
 }
 
 .toggle-menu{
@@ -67,6 +72,7 @@
 }
 .contenido-header{
     display: flex;
+    justify-content: center;
     overflow: hidden;
 }
 .imagen-header{
@@ -81,18 +87,20 @@
 
 .texto-header{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 13rem 5rem;
+    height: 40rem;
     gap: 3rem;
     h1{
-        color: aliceblue;
+        color: white;
         word-spacing: .5rem;
         font-size: 3rem;
     }
     p{
-        color: aliceblue;
+        color: white;
         font-size: 2rem;
+        width: 60rem;
     }
     a{
         text-decoration: none;
@@ -321,6 +329,7 @@
 
 .contenido-oportunidad{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5rem;
@@ -331,7 +340,6 @@
     flex-direction: column;
     gap: 2rem;
     margin: 3rem 2rem;
-    width: 80rem;
     p{
         font-size: 2rem;
     }
@@ -365,6 +373,9 @@
 }
 
 .carrusel-fotos{
+    img{
+        width: 60rem;
+    }
     display: flex;
     width: 20rem;
     animation: slide-carrusel infinite 20s  ;
@@ -373,8 +384,8 @@
     0%{margin-left: 0%;}
     20%{margin-left: 0%;}
 
-    25%{margin-left: -110%;}
-    45%{margin-left: -110%;}
+    25%{margin-left: -90%;}
+    45%{margin-left: -90%;}
 
     50%{margin-left: -217%;}
     70%{margin-left: -217%;}
@@ -392,7 +403,8 @@
     
 }
 .carrusel-menu{
-    display: block;
+    display: flex;
+    gap: 1.3rem;
     margin: 1rem 2rem;
     img{
         width: 7rem;
