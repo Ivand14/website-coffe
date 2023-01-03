@@ -20,6 +20,10 @@ html {
   filter: brightness(0.7);
 }
 
+.toggle-menu {
+  display: none;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -543,6 +547,41 @@ html {
 
 /*VARIABLES*/
 @media screen and (max-width: 1024px) {
+  .navbar {
+    margin: -3rem;
+  }
+  .main-nav {
+    z-index: 1;
+  }
+  .navbar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100rem;
+  }
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenido-header {
+    height: 70rem;
+    margin: -14rem 0rem;
+  }
+  .toggle-menu {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin: 0;
+    top: 5rem;
+    right: 3rem;
+    cursor: pointer;
+    position: absolute;
+  }
+  .toggle-menu img {
+    filter: invert(1);
+    height: 5rem;
+  }
   .texto-header h1 {
     font-size: 2.5rem;
     width: auto;
@@ -623,6 +662,116 @@ html {
   }
   .imagen-header img {
     height: 27rem;
+  }
+  .texto-tipos h2 {
+    font-size: 3rem;
+  }
+  .texto-tipos p {
+    font-size: 1.7rem;
+  }
+  .texto-franchise h2 {
+    font-size: 3rem;
+  }
+  .texto-franchise h3 {
+    font-size: 2rem;
+  }
+  .texto-franchise img {
+    height: 3rem;
+  }
+  .contenido-oportunidad {
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo-oportunidad h2 {
+    font-size: 3rem;
+  }
+  .texto-oportunidad p {
+    margin: 0 5rem;
+    font-size: 2rem;
+  }
+  .llamada, .email {
+    margin: 0 5rem;
+  }
+  .carrusel-fotos img {
+    object-fit: cover;
+    width: 60rem;
+  }
+  .carrusel-menu {
+    display: flex;
+    gap: 1.5rem;
+  }
+  @keyframes slide-carrusel {
+    0% {
+      margin-left: 0%;
+    }
+    20% {
+      margin-left: 0%;
+    }
+    25% {
+      margin-left: -110%;
+    }
+    45% {
+      margin-left: -110%;
+    }
+    50% {
+      margin-left: -217%;
+    }
+    70% {
+      margin-left: -217%;
+    }
+    75% {
+      margin-left: -333%;
+    }
+    95% {
+      margin-left: -333%;
+    }
+    98% {
+      margin-left: -437%;
+    }
+    100% {
+      margin-left: -437%;
+    }
+  }
+  .datos-ubicacion {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .codigo-postal, .codigo {
+    display: flex;
+    flex-direction: column;
+  }
+  .codigo-postal h2, .codigo h2 {
+    text-align: center;
+  }
+  .titulo-contacto h2 {
+    font-size: 3rem;
+  }
+  .titulo-contacto h4 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contenido-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .texto-header {
+    margin: 13rem 2rem;
+  }
+  .texto-header h1 {
+    font-size: 1.6rem;
+    width: auto;
+    text-align: center;
+  }
+  .texto-header p {
+    font-size: 1.3rem;
+  }
+  .texto-header a {
+    font-size: 1.4rem;
+  }
+  .imagen-header {
+    display: none;
   }
   .texto-tipos h2 {
     font-size: 3rem;
