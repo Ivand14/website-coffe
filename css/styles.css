@@ -25,10 +25,6 @@ html {
   filter: brightness(0.79);
 }
 
-.toggle-menu {
-  display: none;
-}
-
 .navbar {
   display: flex;
   flex-direction: row;
@@ -750,6 +746,16 @@ html {
   }
 }
 @media (min-width: 400px) and (max-width: 640px) {
+  .navbar {
+    width: 40rem;
+  }
+  .navbar a {
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+  .navbar-item {
+    padding: 2rem 1rem;
+  }
   .texto-header h1 {
     font-size: 1.5rem;
     width: auto;

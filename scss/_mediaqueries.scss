@@ -1,5 +1,5 @@
 @media screen and (max-width:1024px) {
-
+    
     .contenido-header{
         height: 70rem;
         margin: -14rem 0rem;
@@ -190,6 +190,16 @@
 }
 
 @media (min-width:400px) and (max-width:640px) {
+    .navbar{
+        a{
+            font-size: .9rem;
+            font-weight: 200;
+        }
+        width: 40rem;
+    }
+    .navbar-item{
+        padding: 2rem 1rem;
+    }
 
     .texto-header{
         
