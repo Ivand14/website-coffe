@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--AOS ANIMATION-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Favicon-->
     <link rel="shortcut icon" href="/imagenes/logo.jpg">
     <!--CSS PROPIO-->
@@ -13,7 +15,7 @@
 <body>
 <header class="contenedor-paginaCafe">
         <div class="contenedor-principal">
-            <div class="navbar">
+            <div class="navbar" data-aos="fade-down">
                 <nav class="main-nav">
                     <ul class="navbar-item">
                         <li class="main-menu"><a href="#inicio">HOME</a></li>
@@ -24,7 +26,7 @@
                     </ul>
                 </nav>
             </div>
-        <div class="contenido-header"  id="inicio">
+        <div class="contenido-header"  id="inicio" data-aos="fade-down">
             <div class="texto-header">
                 <h1>WE BELIEVE THAT GREAT COFFEE IS A MUST</h1>
                 <p>Enjoy our Island Blend, freshly roasted right here in Mauritius, in a truly different café setting. 
@@ -36,7 +38,7 @@
     </div>
 </header>
 <!--NOSOTROS-->
-<section class="contenedor-nosotros" id="nosotros">
+<section class="contenedor-nosotros" id="nosotros" >
     <div  class="titulo-nosotros">
         <h2>ABOUT US</h2>
         <p>THE SMELL OF BEANS BEING ROASTED ENCOURAGES JOYFUL
@@ -44,7 +46,7 @@
         </p>
         <img src="./imagenes/about-fond.png" alt="about-fond">
     </div>
-    <div class="texto-nosotros">
+    <div class="texto-nosotros"data-aos="fade-up">
         <p>Café LUX* revolutionised the world of hotel coffee overnight, and our commitment remains clear: to offer 
             guests the finest barista-made coffee, day or night. 
             Due to its high demand and resounding success, LUX* 
@@ -64,7 +66,7 @@
 </section>
 <section class="coffe-contenedor" id="coffe">
     <div class="razones">
-        <div class="texto-razones">
+        <div class="texto-razones" data-aos="fade-right">
             <h2>TOP 5 REASONS TO DRINK COFFE</h2>
             <p>Phillipa Rowney, a South African blogger, is a true coffee lover! Her blog, Coffey and Cake, explores the delicious world of coffee, cafes, sweet treats… She shares with us her Top 5 reasons to drink coffee:</p>
             
@@ -96,7 +98,7 @@
             <P>CAFE LUX* 'S BLEND OF BEANS IS 45% GUATEMALAN, 45% BRAZILIAN, 10% ETHIOPIAN
             </P>
         </div>
-        <div class="cafes-slide">
+        <div class="cafes-slide" data-aos="fade-left">
             <div class="caja-cafe">
                 <img src="./imagenes/cafe-nitro.jpg" alt="cafe-nitro">
                 <h4>NITRO EXPERIENCE</h4>
@@ -179,8 +181,8 @@
     </div>
 </section>
 <!--FRANCHISE-->
-<section class="contenedor-franchise" id="franchise">
-    <div class="texto-franchise">
+<section class="contenedor-franchise" id="franchise" >
+    <div class="texto-franchise" >
         <h2>CAFE LUX FRANCHISE</h2>
         <h3>We believe that great coffee isn't just a luxury; it's a daily essential</h3>
         <img src="./imagenes/about-fond.png" alt="about-fond">
@@ -214,7 +216,7 @@
                     <p>dominik.ruhl@Luxresorts.com</p>
                 </div>
             </div>
-            <div class="carrusel">
+            <div class="carrusel" data-aos="flip-left">
                 <ul class="carrusel-fotos">
                     <li id="foto1"><img src="./imagenes/franchise_slider1.jpg" alt="franchise_slider1"></li>
                     <li id="foto2"><img src="./imagenes/franchise_slider2.jpg" alt="franchise_slider2"></li>
@@ -319,5 +321,12 @@
         <p>COPYRIGHT <img src="./imagenes/derechos-de-autor.png" alt="derechos"> CAFE LUX*</p>
     </div>
 </footer>
+<!--SCRIPT AOS ANIMATION-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration:1500
+    });
+  </script>
 </body>
 </html>
