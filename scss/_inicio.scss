@@ -14,7 +14,15 @@
     filter: brightness(.79)
 }
 
+.hamburguer{
+    position: fixed;
+    top: 3rem;
+    right: 10rem;
+    cursor: pointer;
+    height: 4rem;
+    filter: invert(1);
 
+}
 
 .navbar{
     display: flex;
@@ -165,7 +173,6 @@
 /*COFFE*/
 .coffe-contenedor{
     overflow: hidden;
-    overflow: hidden;
 }
 .razones{
     background-image: url(../imagenes/cafelux-banner.jpg);
@@ -246,7 +253,6 @@
     gap: 5rem;
     width: 100%;
     height: auto;
-
     animation: slide 15s infinite ease-in-out;
 }
 @keyframes slide{
@@ -332,6 +338,7 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    overflow: hidden;
 }
 
 .texto-oportunidad{

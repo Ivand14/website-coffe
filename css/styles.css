@@ -8,6 +8,10 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 /*Inicio*/
 .contenedor-paginaCafe {
   overflow: hidden;
@@ -23,6 +27,15 @@ html {
   max-width: 100%;
   height: auto;
   filter: brightness(0.79);
+}
+
+.hamburguer {
+  position: fixed;
+  top: 3rem;
+  right: 10rem;
+  cursor: pointer;
+  height: 4rem;
+  filter: invert(1);
 }
 
 .navbar {
@@ -174,7 +187,6 @@ html {
 
 /*COFFE*/
 .coffe-contenedor {
-  overflow: hidden;
   overflow: hidden;
 }
 
@@ -352,6 +364,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  overflow: hidden;
 }
 
 .texto-oportunidad {
